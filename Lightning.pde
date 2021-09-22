@@ -93,7 +93,7 @@ void draw() {
   System.out.println(mouseX + " " + mouseY);
 }
 
-void mouseClicked() {
+void mousePressed() {
   c = 1;
   c2 = 1;
 }
