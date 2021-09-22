@@ -29,19 +29,19 @@ void draw() {
 
 
   if (c2 == 1) {
-    x1 = (int)random(0, 800);
-    y1 = (int)random(250, 630);
-    x2 = (int)random(0, 800);
-    y2 = (int)random(250, 630);
-    x3 = (int)random(0, 800);
-    y3 = (int)random(250, 630);
+    x1 = (int)(Math.random()*800);
+    y1 = (int)(Math.random()*380)+250;
+    x2 = (int)(Math.random()*800);
+    y2 = (int)(Math.random()*380)+250;
+    x3 = (int)(Math.random()*800);
+    y3 = (int)(Math.random()*380)+250;
 
     c2 = 0;
   }
   if (c == 1) {
     bolt();
     if (yend >= 650 || xend > 825 || xend < -25) {
-      xstart = (int)random(150, 650);
+      xstart = (int)(Math.random()*500)+150;
       ystart = 0;
       xend = xstart;
       yend = 0;
@@ -102,8 +102,8 @@ void mousePressed() {
 void bolt() {
   strokeWeight(3);
   stroke(200, 200, 255);
-  xend = xend + (int)random(-20, 20);
-  yend = yend + (int)random(0, 30);
+  xend = xend + (int)(Math.random()*40)-20;
+  yend = yend + (int)(Math.random()*30);
   line(xstart, ystart, xend, yend);
   xstart = xend;
   ystart = yend;
