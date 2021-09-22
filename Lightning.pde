@@ -1,6 +1,6 @@
 void setup() {
   size(800, 800);
-  background(5);
+  background(5, 5, 5, 0);
   frameRate(100);
 }
 
@@ -46,6 +46,7 @@ void draw() {
       xend = xstart;
       yend = 0;
       c = 0;
+
       noStroke();
       fill(255);
       rect(0, 0, 800, 650);
@@ -65,7 +66,7 @@ void draw() {
   ellipse(670, 60, 200, 200);
   ellipse(500, 90, 250, 200);
   ellipse(30, 30, 100, 100);
-  
+
   //house
   stroke(0);
   strokeWeight(10);
@@ -112,15 +113,18 @@ void phantom(int x, int y) {
   noFill();
   stroke(5);
   strokeWeight(10);
+  //face
   point(x+10, y-70);
   point(x+50, y-70);
   arc(x+30, y-90, 80, 80, PI/3, (2*PI/3));
   line(x+30, y-80, x+10, y-90);
   line(x+30, y-80, x+50, y-90);
+  //bumps
   arc(x, y, 20, 20, 0, PI);
   arc(x+20, y, 20, 20, 0, PI);
   arc(x+40, y, 20, 20, 0, PI);
   arc(x+60, y, 20, 20, 0, PI);
+  //body
   line(x-10, y, x-10, y-70);
   line(x+70, y, x+70, y-70);
   arc(x+30, y-70, 80, 80, PI, 2*PI);
