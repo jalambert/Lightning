@@ -1,7 +1,7 @@
 void setup() {
   size(800, 800);
   background(5, 5, 5, 0);
-  frameRate(100);
+  //frameRate(100);
 }
 
 
