@@ -29,7 +29,7 @@ void draw() {
 
 
   if (c2 == 1) {
-    x1 = (int)(Math.random()*800);
+    x1 = (int)random(0,800);//(int)(Math.random()*800);
     y1 = (int)(Math.random()*380)+250;
     x2 = (int)(Math.random()*800);
     y2 = (int)(Math.random()*380)+250;
