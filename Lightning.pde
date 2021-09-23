@@ -91,7 +91,7 @@ void draw() {
   fill(0);
   ellipse(250, 580, 15, 15);
 
-  System.out.println(mouseX + " " + mouseY);
+  //System.out.println(mouseX + " " + mouseY);
 }
 
 void mousePressed() {
