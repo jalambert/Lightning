@@ -1,6 +1,6 @@
 void setup() {
   size(800, 800);
-  background(5, 5, 5, 0);
+  background(4);
   //frameRate(100);
 }
 
@@ -111,7 +111,7 @@ void bolt() {
 
 void phantom(int x, int y) {
   noFill();
-  stroke(5);
+  stroke(4);
   strokeWeight(10);
   //face
   point(x+10, y-70);
