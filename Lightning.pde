@@ -5,8 +5,8 @@ void setup() {
 }
 
 
-int xstart;
-int ystart;
+int xstart = 400;
+int ystart = 0;
 int xend = xstart;
 int yend = ystart;
 int c = 0;
